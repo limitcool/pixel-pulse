@@ -1,0 +1,10 @@
+services:
+  pixel-pulse:
+    image: rustqaq/pixel-pulse:latest
+    container_name: pixel-pulse
+    ports:
+      - "8544:8544"
+    volumes:
+      - /docker-volume/pixel-pulse/images/webp:/app/images/webp
+    environment:
+      - RUST_LOG=info

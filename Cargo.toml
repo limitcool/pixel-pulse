@@ -1,0 +1,9 @@
+[package]
+name = "pixel-pulse"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.40.0", features = ["rt-multi-thread", "macros"] }
+rand = "0.8.5"
+axum = { version = "0.7.5", features = ["http1"] }
